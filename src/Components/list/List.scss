@@ -1,0 +1,41 @@
+.list{
+    width: 100%;
+    margin-top: 15px;
+    
+    .listTitle{
+        color: white;
+        font-weight: 700;
+        font-size: large;
+        margin-left: 50px;
+        
+    }
+
+    .wrapper{
+        color: white;
+        //margin-left: 50px;
+        position: relative;
+        .container{
+            display: flex;
+            width: max-content;
+            margin-left: 50px;
+            margin-top: 10px;
+            transition: all 0.5s ease;
+        }
+        .Slider{
+            width: 50px;
+            height:100%;
+            background-color: rgb(32, 31, 31,0.5);
+            position: absolute;
+            z-index: 99;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            cursor: pointer;
+            &.left{left: 0px;
+            }
+            &.right{
+                right: 10px;
+            }
+        }
+    }
+}

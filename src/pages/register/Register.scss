@@ -1,0 +1,85 @@
+.register{
+    height: 100vh;
+    color: white;
+    width: 100vw;
+    
+    background:linear-gradient(to bottom ,
+    rgba(0,0,0,0) 0%,rgba(0,0,0,1) 120%),
+    url("https://www.slashgear.com/img/gallery/netflix-4k-streaming-on-macos-big-sur-to-require-a-t2-security-chip/intro-import.webp");
+    background-size: cover;
+    position: relative;
+    
+    .top{
+        padding: 20px 50px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        .logo{
+            height:50px;
+        }
+        .loginbutton{
+            cursor: pointer;
+            background-color: rgb(238, 29, 29);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 6px 15px;
+            font-size: 16px;
+            font-weight: 500;       
+        }
+      
+     }
+    .container{
+        top: 0;
+        left: 0;
+         width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    h1{
+        font-size: 50px;
+    }
+    h2{margin-top: -10px;
+    font-size: 25px;}
+    p{
+        margin-top: -3px;
+        font-size: 18px;
+    }
+    .input{
+        width: 50%;
+        height: 60px;
+      
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        border-radius: 15px;
+        input{
+           &::placeholder{
+                font-size: 20px;
+                
+            }
+            border: solid white 1px;
+            border-radius: 5px;
+            flex: 9;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.616);
+            color: white;
+        }
+        .enteremail{
+            cursor: pointer;
+             margin-left: 5px;
+            height: 110%;
+            flex: 3;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+             border: none;
+            border-radius: 5px;
+        }
+    }
+ }
+}
